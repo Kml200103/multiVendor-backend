@@ -1,0 +1,15 @@
+
+exports.statusTypes={
+    PENDING:'PENDING', 
+    PREPARING: 'PREPARING', 
+    CANCELED:'CANCELED',
+    OUT_FOR_DELIVERY:"OUT FOR DELIVERY",
+    DELIVERED:'DELIVERED'
+  }
+
+  exports.role={
+    CUSTOMER: "CUSTOMER",
+    ADMIN: "ADMIN",
+    VENDOR:"VENDOR"
+  };
+  
