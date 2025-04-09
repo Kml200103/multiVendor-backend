@@ -7,6 +7,8 @@ const vendorSchema = new mongoose.Schema({
   logo: { type: String },
   address: { type: String },
   approved: { type: Boolean, default: false },
+  rejected: { type: Boolean, default: false },
+  suspend: { type: Boolean, default: false },
   createdAt: { type: Date, default: Date.now },
 });
 

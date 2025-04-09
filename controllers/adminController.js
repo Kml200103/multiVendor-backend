@@ -61,6 +61,7 @@ exports.getDashboardStats = async (req, res) => {
 exports.manageVendors = {
     getAllVendors: async (req, res) => {
         try {
+            
             const { status } = req.query;
             const filter = status ? { status } : {};
             const vendors = await Vendor.find(filter);

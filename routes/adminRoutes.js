@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const adminController = require('../controllers/adminController');
 const adminAuth = require('../helpers/middleware');
-const { authenticate } = require('../helpers/helper');
+// const { authenticate } = require('../helpers/helper');
 
 // router.use(authenticate)
 router.use(adminAuth)
@@ -11,14 +11,6 @@ router.use(adminAuth)
 router.get('/users', adminController.getUsers);
 router.get('/vendors', adminController.getVendors);
 router.get('/products', adminController.getProducts);
-
-
-
-
-// File: routes/adminRoutes.js
-
-
-
 
 // Dashboard
 router.get('/dashboard', adminController.getDashboardStats);
