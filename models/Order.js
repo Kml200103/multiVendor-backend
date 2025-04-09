@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const { statusTypes } = require('../helpers/constants');
 
 const orderSchema = new mongoose.Schema({
-  customerId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   vendorId: { type: mongoose.Schema.Types.ObjectId, ref: 'Vendor', required: true },
   products: [
     {
